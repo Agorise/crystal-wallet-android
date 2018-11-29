@@ -2,14 +2,12 @@ package cy.agorise.crystalwallet.views;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
 import cy.agorise.crystalwallet.R;
-import cy.agorise.crystalwallet.activities.BackupSeedActivity;
 import cy.agorise.crystalwallet.activities.CryptoNetAccountSettingsActivity;
-import cy.agorise.crystalwallet.models.AccountSeed;
 import cy.agorise.crystalwallet.models.CryptoNetAccount;
 
 /**

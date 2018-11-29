@@ -1,4 +1,4 @@
-<android.support.constraint.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -66,7 +66,7 @@
         app:layout_constraintStart_toStartOf="@id/secondView"
         app:layout_constraintBottom_toBottomOf="@id/secondView"/>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAddAccount"
         android:layout_width="55dp"
         android:layout_height="55dp"
@@ -141,4 +141,4 @@
         app:layout_constraintTop_toTopOf="@id/forthView"
         app:layout_constraintBottom_toBottomOf="@id/forthView"/>
 
-</android.support.constraint.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

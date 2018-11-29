@@ -1,7 +1,7 @@
 package cy.agorise.crystalwallet.viewmodels.validators.validationfields;
 
-import android.arch.lifecycle.ViewModelProviders;
-import android.support.v4.app.FragmentActivity;
+import androidx.lifecycle.ViewModelProviders;
+import androidx.fragment.app.FragmentActivity;
 import android.widget.EditText;
 
 import cy.agorise.crystalwallet.models.Contact;

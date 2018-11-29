@@ -1,9 +1,9 @@
 package cy.agorise.crystalwallet.models;
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.ForeignKey;
-import android.support.annotation.NonNull;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.ForeignKey;
+import androidx.annotation.NonNull;
 
 /**
  * Represents a Bitcoin derivated address

@@ -1,12 +1,7 @@
 package cy.agorise.crystalwallet.fragments;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,21 +10,15 @@ import android.widget.Toast;
 
 import org.jetbrains.annotations.NotNull;
 
-import java.util.List;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cy.agorise.crystalwallet.R;
-import cy.agorise.crystalwallet.activities.BoardActivity;
 import cy.agorise.crystalwallet.application.CrystalSecurityMonitor;
 import cy.agorise.crystalwallet.dialogs.material.DialogMaterial;
 import cy.agorise.crystalwallet.dialogs.material.NegativeResponse;
 import cy.agorise.crystalwallet.dialogs.material.PositiveResponse;
 import cy.agorise.crystalwallet.dialogs.material.QuestionDialog;
-import cy.agorise.crystalwallet.models.GeneralSetting;
-import cy.agorise.crystalwallet.viewmodels.GeneralSettingListViewModel;
-import cy.agorise.crystalwallet.viewmodels.validators.PinSecurityValidator;
 
 /**
  * Created by xd on 1/18/18.

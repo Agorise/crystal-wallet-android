@@ -1,13 +1,11 @@
 package cy.agorise.crystalwallet.models;
 
 
-import android.arch.persistence.room.ColumnInfo;
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.PrimaryKey;
-import android.support.annotation.NonNull;
-import android.support.v7.util.DiffUtil;
-
-import cy.agorise.crystalwallet.enums.SeedType;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.DiffUtil;
 
 /**
  * Created by Henry Varona on 6/11/2017.

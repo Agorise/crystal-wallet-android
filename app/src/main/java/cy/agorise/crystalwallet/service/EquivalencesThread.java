@@ -1,6 +1,6 @@
 package cy.agorise.crystalwallet.service;
 
-import android.arch.lifecycle.LifecycleService;
+import androidx.lifecycle.LifecycleService;
 import android.util.Log;
 
 import java.util.ArrayList;

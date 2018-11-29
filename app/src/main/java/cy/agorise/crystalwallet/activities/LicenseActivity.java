@@ -2,8 +2,8 @@ package cy.agorise.crystalwallet.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
@@ -14,11 +14,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cy.agorise.crystalwallet.R;
-import cy.agorise.crystalwallet.application.CrystalApplication;
 import cy.agorise.crystalwallet.dao.CrystalDatabase;
-import cy.agorise.crystalwallet.enums.CryptoNet;
 import cy.agorise.crystalwallet.models.GeneralSetting;
-import cy.agorise.crystalwallet.network.CryptoNetManager;
 
 public class LicenseActivity extends AppCompatActivity {
 

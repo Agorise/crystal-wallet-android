@@ -1,8 +1,8 @@
 package cy.agorise.crystalwallet.views;
 
 import android.content.Context;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,9 +11,7 @@ import android.widget.RelativeLayout;
 import java.util.List;
 
 import cy.agorise.crystalwallet.R;
-import cy.agorise.crystalwallet.models.AccountSeed;
 import cy.agorise.crystalwallet.models.CryptoNetAccount;
-import cy.agorise.crystalwallet.viewmodels.AccountSeedListViewModel;
 import cy.agorise.crystalwallet.viewmodels.CryptoNetAccountListViewModel;
 
 /**

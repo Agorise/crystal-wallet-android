@@ -1,9 +1,9 @@
 package cy.agorise.crystalwallet.activities;
 
 import android.app.PendingIntent;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.nfc.NfcAdapter;
@@ -12,35 +12,20 @@ import android.nfc.tech.IsoDep;
 import android.nfc.tech.MifareClassic;
 import android.nfc.tech.NdefFormatable;
 import android.nfc.tech.NfcA;
-import android.nfc.tech.NfcF;
-import android.nfc.tech.NfcV;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.andrognito.patternlockview.PatternLockView;
-import com.andrognito.patternlockview.listener.PatternLockViewListener;
-
-import org.apache.commons.codec.binary.Base32;
-
 import java.io.IOException;
-import java.math.BigInteger;
 import java.nio.ByteBuffer;
-import java.util.List;
 
-import butterknife.BindView;
 import butterknife.ButterKnife;
 import cy.agorise.crystalwallet.R;
 import cy.agorise.crystalwallet.application.CrystalSecurityMonitor;
-import cy.agorise.crystalwallet.models.GeneralSetting;
 import cy.agorise.crystalwallet.util.PasswordManager;
-import cy.agorise.crystalwallet.util.yubikey.Algorithm;
-import cy.agorise.crystalwallet.util.yubikey.OathType;
-import cy.agorise.crystalwallet.util.yubikey.TOTP;
 import cy.agorise.crystalwallet.util.yubikey.YkOathApi;
-import cy.agorise.crystalwallet.viewmodels.GeneralSettingListViewModel;
 
 public class PocketRequestActivity extends AppCompatActivity {
 

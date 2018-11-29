@@ -1,17 +1,17 @@
 package cy.agorise.crystalwallet.activities;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TabLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.Nullable;
+import com.google.android.material.tabs.TabLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,14 +22,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import cy.agorise.crystalwallet.R;
-import cy.agorise.crystalwallet.fragments.BitsharesSettingsFragment;
 import cy.agorise.crystalwallet.fragments.GeneralAccountSeedCoinSettingsFragment;
 import cy.agorise.crystalwallet.fragments.GeneralAccountSeedFragment;
-import cy.agorise.crystalwallet.fragments.GeneralCryptoNetAccountSettingsFragment;
 import cy.agorise.crystalwallet.models.AccountSeed;
-import cy.agorise.crystalwallet.models.CryptoNetAccount;
 import cy.agorise.crystalwallet.viewmodels.AccountSeedViewModel;
-import cy.agorise.crystalwallet.viewmodels.CryptoNetAccountViewModel;
 
 /**
  * Created by henry varona on 10/29/18.

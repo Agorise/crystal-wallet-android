@@ -17,16 +17,9 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven {
-            // For Room Persistence Library
-            url "https://maven.google.com"
-        }
-        maven {
-            url 'http://www.idescout.com/maven/repo/'
-        }
-        maven {
-            url "https://jitpack.io"
-        }
+        maven { url "https://maven.google.com" }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        maven { url 'http://www.idescout.com/maven/repo/' }
         google()
     }
 }

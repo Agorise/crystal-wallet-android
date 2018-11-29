@@ -1,15 +1,14 @@
 package cy.agorise.crystalwallet.dao;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.persistence.room.Dao;
-import android.arch.persistence.room.Insert;
-import android.arch.persistence.room.OnConflictStrategy;
-import android.arch.persistence.room.Query;
+import androidx.lifecycle.LiveData;
+import androidx.room.Dao;
+import androidx.room.Insert;
+import androidx.room.OnConflictStrategy;
+import androidx.room.Query;
 
 import java.util.List;
 
 import cy.agorise.crystalwallet.models.BitsharesAccountNameCache;
-import cy.agorise.crystalwallet.models.GrapheneAccountInfo;
 
 /**
  * Created by Henry Varona on 6/15/2018.

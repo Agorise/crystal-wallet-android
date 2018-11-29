@@ -1,6 +1,6 @@
 package cy.agorise.crystalwallet.dao.converters;
 
-import android.arch.persistence.room.TypeConverter;
+import androidx.room.TypeConverter;
 
 import java.util.Date;
 
@@ -9,8 +9,6 @@ import cy.agorise.crystalwallet.enums.CryptoNet;
 import cy.agorise.crystalwallet.enums.SeedType;
 import cy.agorise.crystalwallet.models.BitsharesAsset;
 import cy.agorise.crystalwallet.models.CryptoNetAccount;
-
-import static cy.agorise.crystalwallet.R.string.account;
 
 /**
  * Created by Henry Varona on 13/9/2017.

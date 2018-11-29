@@ -1,15 +1,12 @@
 package cy.agorise.crystalwallet.views;
 
-
-import android.arch.paging.PagedListAdapter;
-import android.support.v7.recyclerview.extensions.ListAdapter;
+import androidx.recyclerview.widget.ListAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import cy.agorise.crystalwallet.R;
 import cy.agorise.crystalwallet.models.AccountSeed;
-import cy.agorise.crystalwallet.models.CryptoCoinTransaction;
 
 /**
  * Created by Henry Varona on 11/9/2017.

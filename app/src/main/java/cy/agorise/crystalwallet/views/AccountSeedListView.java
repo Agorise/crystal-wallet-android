@@ -1,9 +1,8 @@
 package cy.agorise.crystalwallet.views;
 
-import android.arch.paging.PagedList;
 import android.content.Context;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,9 +12,7 @@ import java.util.List;
 
 import cy.agorise.crystalwallet.R;
 import cy.agorise.crystalwallet.models.AccountSeed;
-import cy.agorise.crystalwallet.models.CryptoCoinTransaction;
 import cy.agorise.crystalwallet.viewmodels.AccountSeedListViewModel;
-import cy.agorise.crystalwallet.viewmodels.TransactionListViewModel;
 
 /**
  * Created by Henry Varona on 10/9/2017.

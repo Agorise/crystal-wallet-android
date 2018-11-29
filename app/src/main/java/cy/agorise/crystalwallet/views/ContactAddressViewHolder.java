@@ -1,23 +1,17 @@
 package cy.agorise.crystalwallet.views;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Spinner;
-import android.widget.TextView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import cy.agorise.crystalwallet.R;
 import cy.agorise.crystalwallet.enums.CryptoNet;
-import cy.agorise.crystalwallet.models.Contact;
 import cy.agorise.crystalwallet.models.ContactAddress;
 
 /**

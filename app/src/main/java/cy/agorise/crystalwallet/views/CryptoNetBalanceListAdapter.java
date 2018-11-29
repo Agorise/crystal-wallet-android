@@ -1,16 +1,15 @@
 package cy.agorise.crystalwallet.views;
 
 
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v7.recyclerview.extensions.ListAdapter;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.ListAdapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import cy.agorise.crystalwallet.R;
 import cy.agorise.crystalwallet.models.CryptoNetBalance;
-import cy.agorise.crystalwallet.viewmodels.CryptoCoinBalanceListViewModel;
 
 /**
  * Created by Henry Varona on 11/9/2017.

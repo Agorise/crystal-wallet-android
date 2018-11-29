@@ -1,14 +1,12 @@
 package cy.agorise.crystalwallet.viewmodels;
 
 import android.app.Application;
-import android.arch.lifecycle.AndroidViewModel;
-import android.arch.lifecycle.LiveData;
+import androidx.lifecycle.AndroidViewModel;
 
 import java.util.List;
 
 import cy.agorise.crystalwallet.dao.CrystalDatabase;
 import cy.agorise.crystalwallet.models.CryptoCurrencyEquivalence;
-import cy.agorise.crystalwallet.models.CryptoNetBalance;
 
 /**
  * Created by Henry Varona on 27/9/2017.

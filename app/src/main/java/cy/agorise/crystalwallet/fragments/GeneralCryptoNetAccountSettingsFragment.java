@@ -1,12 +1,11 @@
 package cy.agorise.crystalwallet.fragments;
 
 import android.app.Activity;
-import android.arch.lifecycle.LiveData;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,8 +15,6 @@ import android.widget.Toast;
 
 import com.thekhaeng.pushdownanim.PushDownAnim;
 
-import java.util.List;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -25,8 +22,6 @@ import cy.agorise.crystalwallet.R;
 import cy.agorise.crystalwallet.dao.CrystalDatabase;
 import cy.agorise.crystalwallet.models.AccountSeed;
 import cy.agorise.crystalwallet.models.CryptoNetAccount;
-import cy.agorise.crystalwallet.models.GeneralSetting;
-import cy.agorise.crystalwallet.viewmodels.GeneralSettingListViewModel;
 
 
 /**

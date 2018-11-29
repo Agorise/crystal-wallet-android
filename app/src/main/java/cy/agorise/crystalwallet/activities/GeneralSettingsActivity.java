@@ -1,17 +1,13 @@
 package cy.agorise.crystalwallet.activities;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
-import android.widget.TextView;
-
-import com.google.common.collect.BiMap;
-import com.google.common.collect.HashBiMap;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -24,14 +20,8 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnItemSelected;
 import cy.agorise.crystalwallet.R;
-import cy.agorise.crystalwallet.dao.CrystalDatabase;
-import cy.agorise.crystalwallet.models.CryptoCoinBalance;
-import cy.agorise.crystalwallet.models.CryptoCurrency;
-import cy.agorise.crystalwallet.models.CryptoNetAccount;
 import cy.agorise.crystalwallet.models.GeneralSetting;
-import cy.agorise.crystalwallet.models.GrapheneAccount;
 import cy.agorise.crystalwallet.viewmodels.GeneralSettingListViewModel;
-import cy.agorise.crystalwallet.views.CryptoCurrencyAdapter;
 
 public class GeneralSettingsActivity extends AppCompatActivity {
 

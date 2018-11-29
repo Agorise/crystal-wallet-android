@@ -3,9 +3,9 @@ package cy.agorise.crystalwallet.fragments;
 import android.Manifest;
 import android.app.Activity;
 import android.app.Dialog;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.Intent;
@@ -15,15 +15,15 @@ import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AlertDialog;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.DialogFragment;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.core.content.ContextCompat;
+import androidx.appcompat.app.AlertDialog;
 import android.text.Editable;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -45,6 +45,8 @@ import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
@@ -82,8 +84,6 @@ import cy.agorise.crystalwallet.views.CryptoNetAccountAdapter;
 import cy.agorise.graphenej.Invoice;
 import cy.agorise.graphenej.LineItem;
 import me.dm7.barcodescanner.zxing.ZXingScannerView;
-
-import static butterknife.internal.Utils.listOf;
 
 public class SendTransactionFragment extends DialogFragment implements UIValidatorListener, ZXingScannerView.ResultHandler {
 
@@ -617,7 +617,7 @@ public class SendTransactionFragment extends DialogFragment implements UIValidat
 
     public void beginScanQrCode(){
         //mScannerView = new ZXingScannerView(getContext());
-        mScannerView.setFormats(listOf(BarcodeFormat.QR_CODE));
+        mScannerView.setFormats(Collections.singletonList(BarcodeFormat.QR_CODE));
         mScannerView.setAspectTolerance(0.5f);
         mScannerView.setAutoFocus(true);
         mScannerView.setLaserColor(R.color.colorAccent);

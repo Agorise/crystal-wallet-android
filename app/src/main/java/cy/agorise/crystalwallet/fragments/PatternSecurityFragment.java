@@ -1,21 +1,13 @@
 package cy.agorise.crystalwallet.fragments;
 
-import android.app.Activity;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.text.Editable;
-import android.util.Log;
+import androidx.fragment.app.Fragment;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.andrognito.patternlockview.PatternLockView;
 import com.andrognito.patternlockview.listener.PatternLockViewListener;
@@ -26,19 +18,10 @@ import java.util.TimerTask;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnTextChanged;
 import cy.agorise.crystalwallet.R;
 import cy.agorise.crystalwallet.application.CrystalSecurityMonitor;
-import cy.agorise.crystalwallet.dialogs.material.CrystalDialog;
-import cy.agorise.crystalwallet.interfaces.OnResponse;
-import cy.agorise.crystalwallet.models.GeneralSetting;
-import cy.agorise.crystalwallet.requestmanagers.CryptoNetInfoRequests;
 import cy.agorise.crystalwallet.util.ChildViewPager;
 import cy.agorise.crystalwallet.util.PasswordManager;
-import cy.agorise.crystalwallet.viewmodels.GeneralSettingListViewModel;
-import cy.agorise.crystalwallet.viewmodels.validators.PinSecurityValidator;
-import cy.agorise.crystalwallet.viewmodels.validators.UIValidatorListener;
-import cy.agorise.crystalwallet.viewmodels.validators.validationfields.ValidationField;
 
 /**
  * Created by xd on 1/18/18.

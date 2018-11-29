@@ -3,23 +3,16 @@ package cy.agorise.crystalwallet.application;
 import android.app.Activity;
 
 import android.app.Application;
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.Observer;
-import android.arch.lifecycle.ViewModelProviders;
+import androidx.lifecycle.ViewModelProviders;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentActivity;
-
-import java.util.List;
+import androidx.fragment.app.FragmentActivity;
 
 import cy.agorise.crystalwallet.activities.PatternRequestActivity;
 import cy.agorise.crystalwallet.activities.PinRequestActivity;
 import cy.agorise.crystalwallet.activities.PocketRequestActivity;
-import cy.agorise.crystalwallet.fragments.PatternSecurityFragment;
 import cy.agorise.crystalwallet.interfaces.OnResponse;
 import cy.agorise.crystalwallet.models.GeneralSetting;
-import cy.agorise.crystalwallet.notifiers.CrystalWalletNotifier;
 import cy.agorise.crystalwallet.viewmodels.GeneralSettingListViewModel;
 
 /**
