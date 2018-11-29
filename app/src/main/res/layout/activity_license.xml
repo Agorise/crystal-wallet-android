@@ -21,34 +21,28 @@
 
     </ScrollView>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@android:color/white"
-        android:clipToPadding="false"
-        android:padding="4dp"
-        android:orientation="horizontal">
-        <Button
-            android:id="@+id/btnDisAgree"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="0.50"
-            android:layout_marginEnd="8dp"
-            android:theme="@style/RedButton"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:text="@string/disagree" />
-        <Button
+        android:background="@android:color/white">
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnAgree"
-            android:layout_width="match_parent"
+            style="@style/Widget.Crystal.Button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:layout_marginStart="8dp"
-            android:theme="@style/BlueButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
             android:text="@string/agree"
-            android:textSize="14sp"
-            android:textColor="@color/white" />
-    </LinearLayout>
+            android:backgroundTint="#139657"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDisagree"
+            style="@style/Widget.Crystal.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@id/btnAgree"
+            android:text="@string/disagree"
+            android:textColor="@color/red"/>
+    </RelativeLayout>
 </LinearLayout>

@@ -43,7 +43,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
         android:text="Crypto addresses"
-        android:textAppearance="@style/TextAppearance.Body1"
+        android:textAppearance="@style/TextAppearance.Crystal.Body1"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="@id/btnAddAddress"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -58,26 +58,29 @@
         tools:listitem="@layout/contact_address_list_item"
         tools:itemCount="1"/>
 
-    <Button
-        android:id="@+id/btnCancel"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/spacing_different_section"
-        android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:theme="@style/RedButton"
-        android:text="@string/cancel"
-        app:layout_constraintTop_toBottomOf="@id/rvContactAddresses"
-        app:layout_constraintStart_toStartOf="parent"/>
-
-    <Button
-        android:id="@+id/btnCreate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/activity_horizontal_margin"
-        android:theme="@style/BlueButton"
-        android:text="Create"
-        app:layout_constraintTop_toTopOf="@id/btnCancel"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/rvContactAddresses">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCreate"
+            style="@style/Widget.Crystal.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="4dp"
+            android:text="@string/create"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCancel"
+            style="@style/Widget.Crystal.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_toStartOf="@id/btnCreate"
+            android:text="@android:string/cancel"/>
+    </RelativeLayout>
 
     <cy.agorise.crystalwallet.util.BottomStatusBar
         android:id="@+id/bottomStatusBar"

@@ -21,7 +21,7 @@ public class LicenseActivity extends AppCompatActivity {
 
     @BindView(R.id.wvEULA) WebView wvEULA;
 
-    @BindView(R.id.btnDisAgree)
+    @BindView(R.id.btnDisagree)
     Button btnDisAgree;
 
     @BindView(R.id.btnAgree)
@@ -91,7 +91,7 @@ public class LicenseActivity extends AppCompatActivity {
         finish();
     }
 
-    @OnClick(R.id.btnDisAgree)
+    @OnClick(R.id.btnDisagree)
     public void onDisagree() {
         finish();
     }

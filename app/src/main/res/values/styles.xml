@@ -1,5 +1,5 @@
 <resources>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -69,30 +69,16 @@
         <item name="android:textAllCaps">true</item>
     </style>
 
-    <style name="BaseButton" parent="Theme.AppCompat">
+    <style name="Widget.Crystal.Button" parent="Widget.MaterialComponents.Button">
         <item name="android:textColor">@android:color/white</item>
-        <item name="colorButtonNormal">@color/gray</item>
-        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Colored</item>
+        <item name="android:stateListAnimator">@animator/button_state_list_anim</item>
     </style>
 
-    <style name="BlueButton" parent="BaseButton">
-        <item name="colorAccent">@color/colorPrimary</item>
-        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
-    </style>
-
-    <style name="WhiteButton" parent="BaseButton">
-        <item name="colorAccent">@color/white</item>
-        <item name="colorControlHighlight">@color/lightGray</item>
-    </style>
-
-    <style name="RedButton" parent="BaseButton">
-        <item name="colorAccent">@color/red</item>
-        <item name="colorControlHighlight">@color/redColor</item>
+    <style name="Widget.Crystal.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?android:attr/colorPrimaryDark</item>
     </style>
 
     <!-- Text styles -->
-    <style name="TextAppearance.Body1" parent="Base.TextAppearance.AppCompat.Body1" >
-        <item name="android:textSize">16sp</item>
-    </style>
-    <style name="TextAppearance.Body2" parent="Base.TextAppearance.AppCompat.Body2" />
+    <style name="TextAppearance.Crystal.Body1" parent="TextAppearance.MaterialComponents.Body1" />
+    <style name="TextAppearance.Crystal.Body2" parent="TextAppearance.MaterialComponents.Body2" />
 </resources>

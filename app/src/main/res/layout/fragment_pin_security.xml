@@ -38,15 +38,14 @@
         android:textColor="@color/red"
         android:layout_below="@+id/etConfirmPin" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnOK"
+        style="@style/Widget.Crystal.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:theme="@style/WhiteButton"
-        android:text="@string/ok"
-        android:layout_below="@+id/etConfirmPin"
         android:layout_marginTop="5dp"
-        android:textColor="@color/black"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:text="@string/ok"
+        android:layout_below="@+id/etConfirmPin" />
 
 </RelativeLayout>

@@ -87,7 +87,6 @@
             android:visibility="visible"
             app:backgroundTint="@color/colorPrimary"
             app:fabSize="normal"
-            android:theme="@style/BlueButton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@id/secondView"
             app:srcCompat="@drawable/ic_add_24dp" />

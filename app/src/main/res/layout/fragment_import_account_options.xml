@@ -21,50 +21,43 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnImportBackup"
+        style="@style/Widget.Crystal.Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:background="@color/colorPrimary"
         android:text="@string/import_account_backup"
         android:textAllCaps="false"
-        android:textColor="@color/white"
         android:textSize="18sp"
-        android:theme="@style/BlueButton"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/tvDescription"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/tvDescription"
         app:layout_constraintTop_toBottomOf="@id/tvDescription" />
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnImportSeed"
+        style="@style/Widget.Crystal.Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:background="@color/colorPrimary"
         android:text="@string/import_account_seed"
         android:textAllCaps="false"
-        android:theme="@style/BlueButton"
-        android:textColor="@color/white"
         android:textSize="18sp"
-        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@id/btnImportBackup"
         app:layout_constraintStart_toStartOf="@id/btnImportBackup"
         app:layout_constraintEnd_toEndOf="@id/btnImportBackup"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnCancel"
+        style="@style/Widget.Crystal.Button"
         android:layout_width="0dp"
-        android:layout_height="59dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="22dp"
-        android:theme="@style/RedButton"
         android:text="@string/dialog_cancel"
         android:textAllCaps="false"
-        android:textColor="@color/white"
         android:textSize="18sp"
-        android:textStyle="bold"
+        android:backgroundTint="@color/red"
         app:layout_constraintEnd_toEndOf="@id/btnImportSeed"
         app:layout_constraintStart_toStartOf="@id/btnImportSeed"
         app:layout_constraintTop_toBottomOf="@id/btnImportSeed" />

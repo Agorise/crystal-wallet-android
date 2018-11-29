@@ -184,15 +184,13 @@
             app:layout_constraintStart_toStartOf="@id/tvCloseWalletTimer"
             app:layout_constraintTop_toBottomOf="@id/tvCloseWalletTimer"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnContact"
+            style="@style/Widget.Crystal.Button"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
             android:layout_marginTop="30dp"
             android:text="CONTACT"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:theme="@style/BlueButton"
             app:layout_constraintEnd_toEndOf="@id/sCloseWalletTimer"
             app:layout_constraintTop_toBottomOf="@id/tvCloseWalletTimer" />
 

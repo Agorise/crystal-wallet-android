@@ -51,16 +51,15 @@
 
         </LinearLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCopy"
+            style="@style/Widget.Crystal.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/linearlayout1"
             android:layout_marginTop="25dp"
-            android:theme="@style/BlueButton"
             android:layout_alignParentRight="true"
-            android:text="@string/window_seed_copy"
-            android:textColor="@color/white"/>
+            android:text="@string/window_seed_copy"/>
 
     </RelativeLayout>
 

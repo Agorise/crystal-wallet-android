@@ -23,16 +23,13 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnUpgrade"
+            style="@style/Widget.Crystal.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            style="@style/Widget.Button"
             android:text="@string/upgrade"
-            android:theme="@style/BlueButton"
-            android:textStyle="bold"
-            android:textColor="@color/white"
             app:layout_constraintTop_toBottomOf="@id/tvUpgrade"
             app:layout_constraintStart_toStartOf="@id/tvUpgrade" />
 
@@ -47,16 +44,13 @@
             app:layout_constraintTop_toBottomOf="@id/btnUpgrade"
             app:layout_constraintEnd_toEndOf="@id/tvUpgrade"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnImport"
+            style="@style/Widget.Crystal.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            style="@style/Widget.Button"
             android:text="@string/import_"
-            android:theme="@style/BlueButton"
-            android:textStyle="bold"
-            android:textColor="@color/white"
             app:layout_constraintTop_toBottomOf="@id/tvImport"
             app:layout_constraintStart_toStartOf="@id/btnUpgrade" />
 
@@ -71,16 +65,13 @@
             app:layout_constraintTop_toBottomOf="@id/btnImport"
             app:layout_constraintEnd_toEndOf="@id/tvImport"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnRefresh"
+            style="@style/Widget.Crystal.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            style="@style/Widget.Button"
             android:text="@string/refresh"
-            android:textStyle="bold"
-            android:theme="@style/BlueButton"
-            android:textColor="@color/white"
             app:layout_constraintTop_toBottomOf="@id/tvRefresh"
             app:layout_constraintStart_toStartOf="@id/btnImport" />
 
@@ -95,16 +86,14 @@
             app:layout_constraintTop_toBottomOf="@id/btnRefresh"
             app:layout_constraintEnd_toEndOf="@id/tvRefresh"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnRemove"
-            style="@style/Widget.Button"
+            style="@style/Widget.Crystal.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:text="@string/remove"
-            android:theme="@style/RedButton"
-            android:textColor="@color/white"
-            android:textStyle="bold"
+            android:backgroundTint="@color/red"
             app:layout_constraintStart_toStartOf="@id/btnRefresh"
             app:layout_constraintTop_toBottomOf="@id/tvRemove" />
 
